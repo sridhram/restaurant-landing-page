@@ -1,0 +1,102 @@
+.app__about-us--container {
+  background: url(../../assets/bg.png) no-repeat;
+  color: var(--color-grey);
+  padding: 2rem;
+  display: flex;
+  position: relative;
+}
+
+.app__about-us--overlay {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  inset: 0;
+  margin: auto;
+}
+
+.app__about-us--overlay img {
+  z-index: 0;
+  margin: auto;
+  height: 100%;
+  aspect-ratio: 1;
+}
+
+.app__about-us--content {
+  display: flex;
+  align-items: center;
+  margin-block: auto;
+  gap: 5rem;
+  z-index: 1;
+}
+
+.app__about-us--content img {
+  height: 86vh;
+  max-width: unset;
+}
+
+.subheading {
+  font-size: 2.9rem;
+}
+.subheading h3 {
+  color: var(--color-golden);
+}
+
+.app__about-us--section {
+  text-align: end;
+}
+
+.app__about-us--content p {
+  font-size: 1.3rem;
+}
+
+.app__about-us--section .subheading h3::after {
+  background-position: bottom right;
+}
+
+.app__about-us--history .subheading h3::after {
+  background-position: bottom right;
+  transform: scaleX(-1);
+}
+
+.app__about-us--btn {
+  background: var(--color-golden);
+  padding: 1rem 2rem;
+  margin-block-start: 2rem;
+}
+.app__about-us--btn:hover {
+  animation: bg-transition 0.5s;
+  outline: 1px solid var(--color-golden);
+  background: transparent;
+  color: var(--color-golden);
+}
+@keyframes bg-transition {
+  from {
+    background-color: var(--color-golden);
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 850px) {
+  .app__about-us--overlay {
+    width: 50vw;
+    height: 38vh;
+  }
+  .app__about-us--content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .app__about-us--content img {
+    width: 40%;
+    margin: auto;
+    height: auto;
+  }
+  .app__about-us--section .subheading h3::after,
+  .app__about-us--history .subheading h3::after {
+    background-position: bottom center;
+  }
+  .app__about-us--section {
+    text-align: center;
+  }
+}

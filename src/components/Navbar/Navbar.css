@@ -18,7 +18,7 @@
   font-size: 1.25rem;
 }
 
-img {
+.app__header--logo img {
   width: 150px;
 }
 .app__header--under-line,
@@ -69,6 +69,7 @@ img {
     flex-direction: column;
     justify-content: flex-start;
     gap: 2rem;
+    z-index: 10;
   }
   .mobile-only-menu {
     position: absolute;
@@ -92,5 +93,14 @@ img {
   .app__header--book-table-btn.mobile-only {
     margin-block-end: auto;
     display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  .app__header--logo img {
+    width: 100px;
+  }
+  .mobile-only-menu {
+    top: unset;
   }
 }

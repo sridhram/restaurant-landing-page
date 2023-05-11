@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-const SubHeading = () => (
-  <div>
-    SubHeading
+const SubHeading = ({ text }) => (
+  <div className="subheading">
+    <h3>{text}</h3>
   </div>
 );
 
