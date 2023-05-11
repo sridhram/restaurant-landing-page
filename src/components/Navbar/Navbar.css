@@ -1,0 +1,44 @@
+.app__header {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2.5rem;
+  align-items: center;
+}
+
+.app__header--nav {
+  display: flex;
+}
+
+.app__header--menu {
+  display: flex;
+  font-size: 1.5rem;
+  gap: 2rem;
+}
+
+.app__header--book-table-btn {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: var(--color-white);
+  font-size: 1.25rem;
+}
+
+img {
+  width: 150px;
+}
+
+.app__header--under-line {
+  position: relative;
+}
+
+.app__header--under-line::after {
+  content: "";
+  position: absolute;
+  height: 0.2rem;
+  width: 100%;
+  background-color: var(--color-white);
+  left: 0;
+  bottom: -5px;
+}
