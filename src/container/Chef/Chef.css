@@ -1,0 +1,89 @@
+.app__chef--main-container {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  padding: 3rem;
+  background: url("../../assets/bg.png") no-repeat;
+  color: var(--color-white);
+}
+
+.app__chef--heading {
+  font-size: 4rem;
+  color: var(--color-golden);
+}
+
+.app__chef--main-container .subheading h3::after {
+  background-position: bottom left;
+}
+.app__chef--main-container .subheading {
+  padding-block-end: 0.5rem;
+}
+.app__chef--desc {
+  font-size: 1.1rem;
+  margin-block: 2rem;
+  color: var(--color-grey);
+  font-family: var(--font-alt);
+}
+
+.app__chef--chef-img {
+  min-height: 620px;
+}
+
+.app__chef--sign-img {
+  width: 35%;
+}
+
+.app__chef--chef-name {
+  margin-block: 2rem;
+}
+
+.app__chef--chef-name h3 {
+  font-size: 2rem;
+  color: var(--color-golden);
+}
+.app__chef--chef-name p {
+  font-family: var(--font-alt);
+}
+
+.app__chef--quote {
+  width: 3rem;
+  height: 3rem;
+  margin-inline-end: 1rem;
+  float: left;
+}
+@media (max-width: 850px) {
+  .app__chef--main-container {
+    flex-direction: column;
+  }
+  .app__chef--chef-img {
+    max-height: 620px;
+    min-height: unset;
+  }
+  .app__chef--heading {
+    font-size: 3rem;
+    margin-block-start: 1rem;
+  }
+  .app__chef--desc {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .app__chef--main-container .subheading {
+    font-size: 1.2rem;
+    padding-block-end: 1rem;
+  }
+  .app__chef--heading {
+    font-size: 2rem;
+    margin-block-start: 1rem;
+  }
+  .app__chef--desc {
+    font-size: 0.9rem;
+  }
+  .app__chef--chef-name h3 {
+    font-size: 1.5rem;
+  }
+  .app__chef--chef-name p {
+    font-size: 0.8rem;
+  }
+}
