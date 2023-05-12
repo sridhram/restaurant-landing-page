@@ -1,0 +1,27 @@
+.app__menu-item--price-container {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.app__menu-item--tag {
+  color: var(--color-grey);
+  margin-block-start: 0.3rem;
+}
+
+.app__menu-item--price-container hr {
+  flex-grow: 1;
+}
+
+.app__menu-item--container {
+  margin-block: 1rem;
+}
+
+.app__menu-item--price-container h3 {
+  color: var(--color-golden);
+  font-size: 1.5rem;
+}
+
+.app__menu-item--price {
+  font-family: var(--font-alt);
+}

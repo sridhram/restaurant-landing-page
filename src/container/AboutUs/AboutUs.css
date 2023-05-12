@@ -34,10 +34,10 @@
   max-width: unset;
 }
 
-.subheading {
+.app__about-us--container .subheading {
   font-size: 2.9rem;
 }
-.subheading h3 {
+.app__about-us--container .subheading h3 {
   color: var(--color-golden);
 }
 
