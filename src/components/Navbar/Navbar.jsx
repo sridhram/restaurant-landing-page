@@ -7,6 +7,10 @@ import { react, useState } from "react";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [showCloseIcon, toggleShowCloseIcon] = useState(false);
+  const toggleMenu = () => {
+    setToggle(!toggle);
+    toggleShowCloseIcon(!showCloseIcon);
+  };
   return (
     <header className={`app__header ${toggle && "mobile-only slide-bottom"}`}>
       <a
@@ -18,7 +22,10 @@ const Navbar = () => {
         <img src={images.gericht} alt="logo" />
       </a>
       <nav className={`app__header--nav ${toggle && "mobile-only"}`}>
-        <ul className={`app__header--menu ${toggle && "mobile-only"}`}>
+        <ul
+          className={`app__header--menu ${toggle && "mobile-only"}`}
+          onClick={toggleMenu}
+        >
           <li className="app__header--under-line">
             <a href="#home">Home</a>
           </li>
@@ -41,13 +48,7 @@ const Navbar = () => {
       >
         <a href="#book-table">Book a table</a>
       </button>
-      <button
-        className="mobile-only-menu"
-        onClick={() => {
-          setToggle(!toggle);
-          toggleShowCloseIcon(!showCloseIcon);
-        }}
-      >
+      <button className="mobile-only-menu" onClick={toggleMenu}>
         {!toggle && !showCloseIcon ? (
           <GiHamburgerMenu fontSize={27} color="#fff" />
         ) : (
