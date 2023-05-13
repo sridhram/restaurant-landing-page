@@ -2,6 +2,7 @@
   background-color: var(--color-black);
   display: flex;
   color: var(--color-white);
+  padding: 3rem;
 }
 
 .app__footer--reserve-container {
